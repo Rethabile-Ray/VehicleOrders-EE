@@ -28,7 +28,7 @@ The application solves the problem of **tracking delayed orders, filtering recen
 - GlassFish / Payara  
 - HTML
 
-#SCREENSHOTS
+# SCREENSHOTS
  ![Login to the system](https://github.com/user-attachments/assets/e8cff5d7-f445-42d2-8100-537886194bd3)  
  ![Add new orders](https://github.com/user-attachments/assets/6f4c769d-baa9-4a46-aa53-ed043e8a52ce)
  ![View orders](https://github.com/user-attachments/assets/eba5dd2e-21ec-4e45-ab77-2b17c7945ab1)  

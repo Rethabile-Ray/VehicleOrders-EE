@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>AddOrderServlet</servlet-name>
+        <servlet-class>za.ac.tut.web3434.AddOrderServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewServlet</servlet-name>
+        <servlet-class>za.ac.tut.web3434.ViewServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewDelayedOrdersServlet</servlet-name>
+        <servlet-class>za.ac.tut.web3434.ViewDelayedOrdersServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewPastNinetyDaysServlet</servlet-name>
+        <servlet-class>za.ac.tut.web3434.ViewPastNinetyDaysServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewAllOrdersServlet</servlet-name>
+        <servlet-class>za.ac.tut.web3434.ViewAllOrdersServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>za.ac.tut.web3434.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddOrderServlet</servlet-name>
+        <url-pattern>/AddOrderServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewServlet</servlet-name>
+        <url-pattern>/ViewServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewDelayedOrdersServlet</servlet-name>
+        <url-pattern>/ViewDelayedOrdersServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewPastNinetyDaysServlet</servlet-name>
+        <url-pattern>/ViewPastNinetyDaysServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewAllOrdersServlet</servlet-name>
+        <url-pattern>/ViewAllOrdersServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet.do</url-pattern>
+    </servlet-mapping>
+    <error-page>
+        <error-code>403</error-code>
+        <location>/forbidden_error_page.jsp</location>
+    </error-page>
+    <security-constraint>
+        <display-name>SupervisorConstraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>SupervisorResources</web-resource-name>
+            <description>These resources are reserved for the supervisor.</description>
+            <url-pattern>/enter_order.html</url-pattern>
+            <url-pattern>/AddOrderServlet.do</url-pattern>
+            <url-pattern>/added_order.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>Authenticate Supervisor</description>
+            <role-name>supervisor</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <display-name>ManagerConstraint</display-name>
+        <web-resource-collection>
+            <web-resource-name>ManagerResources</web-resource-name>
+            <description>These resources are reserved for the manager.</description>
+            <url-pattern>/ViewAllOrdersServlet.do</url-pattern>
+            <url-pattern>/ViewDelayedOrdersServlet.do</url-pattern>
+            <url-pattern>/ViewPastNinetyDaysServlet.do</url-pattern>
+            <url-pattern>/ViewServlet.do</url-pattern>
+            <url-pattern>/view_under_twenty.jsp</url-pattern>
+            <url-pattern>/view_past_ninety_days.jsp</url-pattern>
+            <url-pattern>/view_critically_delayed.jsp</url-pattern>
+            <url-pattern>/view_all_orders.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>Authenticate manager</description>
+            <role-name>manager</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>file</realm-name>
+        <form-login-config>
+            <form-login-page>/login.jsp</form-login-page>
+            <form-error-page>/login_error_page.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+    <security-role>
+        <description>This is the supervisor role. It can add the person and vehicle details.</description>
+        <role-name>supervisor</role-name>
+    </security-role>
+    <security-role>
+        <description>This is the manager role. It can view results.</description>
+        <role-name>manager</role-name>
+    </security-role>
+</web-app>

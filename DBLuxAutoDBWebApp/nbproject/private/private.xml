@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/mokau/OneDrive/Documents/NetBeansProjects/DBLuxAutoDBWebApp/web/index.html</file>
+            <file>file:/C:/Users/mokau/OneDrive/Documents/NetBeansProjects/DBLuxAutoDBWebApp/web/enter_order.html</file>
+            <file>file:/C:/Users/mokau/OneDrive/Documents/NetBeansProjects/DBLuxAutoDBWebApp/src/java/za/ac/tut/web3434/AddOrderServlet.java</file>
+            <file>file:/C:/Users/mokau/OneDrive/Documents/NetBeansProjects/DBLuxAutoDBWebApp/web/added_order.jsp</file>
+            <file>file:/C:/Users/mokau/OneDrive/Documents/NetBeansProjects/DBLuxAutoDBWebApp/web/menu_page.html</file>
+            <file>file:/C:/Users/mokau/OneDrive/Documents/NetBeansProjects/DBLuxAutoDBWebApp/src/java/za/ac/tut/web3434/ViewServlet.java</file>
+            <file>file:/C:/Users/mokau/OneDrive/Documents/NetBeansProjects/DBLuxAutoDBWebApp/web/view_under_twenty.jsp</file>
+            <file>file:/C:/Users/mokau/OneDrive/Documents/NetBeansProjects/DBLuxAutoDBWebApp/src/java/za/ac/tut/web3434/ViewDelayedOrdersServlet.java</file>
+            <file>file:/C:/Users/mokau/OneDrive/Documents/NetBeansProjects/DBLuxAutoDBWebApp/web/view_critically_delayed.jsp</file>
+            <file>file:/C:/Users/mokau/OneDrive/Documents/NetBeansProjects/DBLuxAutoDBWebApp/src/java/za/ac/tut/web3434/ViewPastNinetyDaysServlet.java</file>
+            <file>file:/C:/Users/mokau/OneDrive/Documents/NetBeansProjects/DBLuxAutoDBWebApp/web/view_past_ninety_days.jsp</file>
+            <file>file:/C:/Users/mokau/OneDrive/Documents/NetBeansProjects/DBLuxAutoDBWebApp/src/java/za/ac/tut/web3434/ViewAllOrdersServlet.java</file>
+            <file>file:/C:/Users/mokau/OneDrive/Documents/NetBeansProjects/DBLuxAutoDBWebApp/web/view_all_orders.jsp</file>
+        </group>
+    </open-files>
+</project-private>

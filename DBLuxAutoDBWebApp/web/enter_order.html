@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Enter Order</h1>
+        <form action="AddOrderServlet.do" method="POST">
+        <table>
+            <tr>
+                <td>Order Reference</td>
+                <td><input type="text" name="referenceNum"></td>
+            </tr>
+             <tr>
+                <td>Full Name</td>
+                <td><input type="text" name="fullName"></td>
+            </tr>
+             <tr>
+                <td>ID number</td>
+                <td><input type="number" name="id"></td>
+            </tr>
+            <tr>
+                <td>Part Name</td>
+                <td><input type="text" name="partName"></td>
+            </tr>
+            <tr>
+                <td>Part Category</td>
+                <td><input type="text" name="partCategory"></td>
+            </tr>
+            <tr>
+                <td>Order Quantity</td>
+                <td><input type="number" name="partQuantity"></td>
+            </tr>
+            <tr>
+                <td>Unit Price</td>
+                <td><input type="number" name="unitPrice"></td>
+            </tr>
+            <tr>
+                <td>Order Date</td>
+                <td><input type="date" name="orderDate"></td>
+            </tr>
+            <tr>
+                <td>Expected Date</td>
+                <td><input type="date" name="expectedDate"></td>
+            </tr>
+            <tr>
+                <td>Submit</td>
+                <td><input type="submit" name="butt"></td>
+            </tr>
+        </table>
+            </form>
+    </body>
+</html>
